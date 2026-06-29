@@ -55,12 +55,12 @@
     <!-- Commits -->
     <g transform="translate(0, 0)">
       <text x="0" y="0" class="label-text">Total Commits</text>
-      <text x="0" y="22" class="value-text" fill="#38bdf8">312</text>
+      <text x="0" y="22" class="value-text" fill="#38bdf8">154</text>
     </g>
     <!-- PRs -->
     <g transform="translate(0, 48)">
       <text x="0" y="0" class="label-text">Pull Requests</text>
-      <text x="0" y="22" class="value-text">58</text>
+      <text x="0" y="22" class="value-text">0</text>
     </g>
   </g>
 
@@ -69,12 +69,12 @@
     <!-- Stars -->
     <g transform="translate(0, 0)">
       <text x="0" y="0" class="label-text">Stars Earned</text>
-      <text x="0" y="22" class="value-text" fill="#eab308">42</text>
+      <text x="0" y="22" class="value-text" fill="#eab308">5</text>
     </g>
     <!-- Issues -->
     <g transform="translate(0, 48)">
       <text x="0" y="0" class="label-text">Issues Closed</text>
-      <text x="0" y="22" class="value-text">16</text>
+      <text x="0" y="22" class="value-text">0</text>
     </g>
   </g>
 
@@ -82,6 +82,6 @@
   <line x1="20" y1="160" x2="360" y2="160" stroke="#1e293b" stroke-width="1" />
   <g transform="translate(25, 182)">
     <text x="0" y="0" class="label-text" font-size="11.5">Contributed Repositories</text>
-    <text x="315" y="-2" class="value-text" font-size="14" text-anchor="end" fill="#6366f1">8</text>
+    <text x="315" y="-2" class="value-text" font-size="14" text-anchor="end" fill="#6366f1">3</text>
   </g>
 </svg>

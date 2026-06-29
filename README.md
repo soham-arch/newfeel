@@ -261,6 +261,21 @@ Here are the repositories I've been actively developing lately:
     <td width="50%" valign="top" style="border: none; padding-bottom: 15px;">
       <div style="background-color: #030712; border: 1.5px solid #1e293b; border-radius: 12px; padding: 15px; min-height: 110px;">
         <h4 style="margin: 0 0 8px 0; font-family: 'Outfit', sans-serif;">
+          <a href="https://github.com/soham-arch/newfeel" target="_blank" style="color: #38bdf8; text-decoration: none; font-weight: 700;">📂 newfeel</a>
+        </h4>
+        <p style="margin: 0 0 12px 0; font-size: 12px; color: #94a3b8; line-height: 1.4; font-family: 'Inter', sans-serif;">
+          No description provided.
+        </p>
+        <div style="font-size: 11px; color: #64748b; font-family: 'JetBrains Mono', monospace;">
+          <span style="margin-right: 15px;">⭐ 0</span>
+          <span style="margin-right: 15px;">🍴 0</span>
+          <span style="color: #3b82f6;">●</span> JavaScript
+        </div>
+      </div>
+    </td>
+    <td width="50%" valign="top" style="border: none; padding-bottom: 15px;">
+      <div style="background-color: #030712; border: 1.5px solid #1e293b; border-radius: 12px; padding: 15px; min-height: 110px;">
+        <h4 style="margin: 0 0 8px 0; font-family: 'Outfit', sans-serif;">
           <a href="https://github.com/soham-arch/Mindmirror-backend" target="_blank" style="color: #38bdf8; text-decoration: none; font-weight: 700;">📂 Mindmirror-backend</a>
         </h4>
         <p style="margin: 0 0 12px 0; font-size: 12px; color: #94a3b8; line-height: 1.4; font-family: 'Inter', sans-serif;">
@@ -273,6 +288,8 @@ Here are the repositories I've been actively developing lately:
         </div>
       </div>
     </td>
+  </tr>
+  <tr style="border: none;">
     <td width="50%" valign="top" style="border: none; padding-bottom: 15px;">
       <div style="background-color: #030712; border: 1.5px solid #1e293b; border-radius: 12px; padding: 15px; min-height: 110px;">
         <h4 style="margin: 0 0 8px 0; font-family: 'Outfit', sans-serif;">
@@ -288,8 +305,6 @@ Here are the repositories I've been actively developing lately:
         </div>
       </div>
     </td>
-  </tr>
-  <tr style="border: none;">
     <td width="50%" valign="top" style="border: none; padding-bottom: 15px;">
       <div style="background-color: #030712; border: 1.5px solid #1e293b; border-radius: 12px; padding: 15px; min-height: 110px;">
         <h4 style="margin: 0 0 8px 0; font-family: 'Outfit', sans-serif;">
@@ -302,21 +317,6 @@ Here are the repositories I've been actively developing lately:
           <span style="margin-right: 15px;">⭐ 0</span>
           <span style="margin-right: 15px;">🍴 0</span>
           <span style="color: #3b82f6;">●</span> JavaScript
-        </div>
-      </div>
-    </td>
-    <td width="50%" valign="top" style="border: none; padding-bottom: 15px;">
-      <div style="background-color: #030712; border: 1.5px solid #1e293b; border-radius: 12px; padding: 15px; min-height: 110px;">
-        <h4 style="margin: 0 0 8px 0; font-family: 'Outfit', sans-serif;">
-          <a href="https://github.com/soham-arch/ahilyanagar-municipal-project" target="_blank" style="color: #38bdf8; text-decoration: none; font-weight: 700;">📂 ahilyanagar-municipal-project</a>
-        </h4>
-        <p style="margin: 0 0 12px 0; font-size: 12px; color: #94a3b8; line-height: 1.4; font-family: 'Inter', sans-serif;">
-          No description provided.
-        </p>
-        <div style="font-size: 11px; color: #64748b; font-family: 'JetBrains Mono', monospace;">
-          <span style="margin-right: 15px;">⭐ 0</span>
-          <span style="margin-right: 15px;">🍴 0</span>
-          <span style="color: #3b82f6;">●</span> Dart
         </div>
       </div>
     </td>
