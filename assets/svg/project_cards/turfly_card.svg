@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 175" width="100%" height="100%">
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800;900&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@700&amp;display=swap');
+      
+      .card-bg {
+        fill: #030712;
+        stroke: #1e293b;
+        stroke-width: 1.5;
+        rx: 16px;
+      }
+      .card-border-glow {
+        fill: none;
+        stroke-width: 1.5;
+        stroke-linecap: round;
+      }
+      .proj-title {
+        font-family: 'Outfit', system-ui, sans-serif;
+        font-weight: 900;
+        font-size: 26px;
+        fill: #ffffff;
+        letter-spacing: -0.02em;
+      }
+      .proj-desc {
+        font-family: 'Inter', system-ui, sans-serif;
+        font-size: 13px;
+        fill: #94a3b8;
+        font-weight: 400;
+      }
+      .status-text {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+      .tag-bg {
+        fill: #0d1527;
+        stroke: #1e293b;
+        stroke-width: 1;
+        rx: 6px;
+      }
+      .tag-text {
+        font-family: 'Inter', system-ui, sans-serif;
+        font-size: 10.5px;
+        font-weight: 500;
+        fill: #64748b;
+      }
+      .cta-text {
+        font-family: 'Outfit', system-ui, sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        fill: #38bdf8;
+        letter-spacing: 0.05em;
+      }
+      
+      /* Subtle animations */
+      .glowing-node {
+        animation: pulseGlow 4s ease-in-out infinite alternate;
+      }
+      @keyframes pulseGlow {
+        0% { fill-opacity: 0.2; r: 8; }
+        100% { fill-opacity: 0.5; r: 14; }
+      }
+      .float-illustration {
+        animation: floatIllus 5s ease-in-out infinite alternate;
+      }
+      @keyframes floatIllus {
+        0% { transform: translateY(0px) rotate(0deg); }
+        100% { transform: translateY(-6px) rotate(1deg); }
+      }
+      .dash-flow {
+        stroke-dasharray: 6 10;
+        animation: flowMarch 25s linear infinite;
+      }
+      @keyframes flowMarch {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -500; }
+      }
+    </style>
+
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#0b1329" />
+    </linearGradient>
+
+    <linearGradient id="mindmirror-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+
+    <linearGradient id="crimeface-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#f43f5e" />
+    </linearGradient>
+
+    <linearGradient id="turfly-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <pattern id="card-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.5" stroke-opacity="0.12" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="175" fill="url(#card-grad)" class="card-bg" />
+  <rect width="800" height="175" fill="url(#card-grid)" rx="16" />
+  
+  <!-- Glowing border line -->
+  <path d="M 30 0 L 150 0" stroke="url(#turfly-glow)" stroke-width="2.5" stroke-linecap="round" />
+  
+  <!-- Content Group -->
+  <g transform="translate(40, 30)">
+    <!-- Status Badge -->
+    <g transform="translate(0, 0)">
+      <rect width="90" height="18" rx="4" fill="#0d2620" stroke="#065f46" stroke-width="0.75" />
+      <circle cx="10" cy="9" r="2.5" fill="#10b981" />
+      <text x="20" y="12" class="status-text" fill="#10b981">Deployment</text>
+    </g>
+
+    <!-- Title -->
+    <text x="0" y="44" class="proj-title">Turfly</text>
+    
+    <!-- Description -->
+    <text x="0" y="70" class="proj-desc">A sports facility booking and local player matchmaking social platform,</text>
+    <text x="0" y="88" class="proj-desc">reducing scheduler friction and forming real-world athlete matches.</text>
+
+    <!-- Tech Tags -->
+    <g transform="translate(0, 106)">
+      <!-- React Native -->
+      <g transform="translate(0, 0)">
+        <rect width="100" height="20" class="tag-bg" />
+        <text x="12" y="14" class="tag-text">React Native</text>
+      </g>
+      <!-- Node.js -->
+      <g transform="translate(106, 0)">
+        <rect width="70" height="20" class="tag-bg" />
+        <text x="12" y="14" class="tag-text">Node.js</text>
+      </g>
+      <!-- Express -->
+      <g transform="translate(182, 0)">
+        <rect width="70" height="20" class="tag-bg" />
+        <text x="12" y="14" class="tag-text">Express</text>
+      </g>
+      <!-- MongoDB -->
+      <g transform="translate(258, 0)">
+        <rect width="75" height="20" class="tag-bg" />
+        <text x="12" y="14" class="tag-text">MongoDB</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Graphic Illustration (Right Aligned) -->
+  <g class="float-illustration" transform="translate(620, 85)">
+    <!-- Sports pitch outline (isometric) -->
+    <polygon points="0,-35 50,-10 0,15 -50,-10" fill="none" stroke="#10b981" stroke-width="1.5" />
+    <line x1="-25" y1="-22" x2="25" y2="2" stroke="#10b981" stroke-width="1" opacity="0.6" />
+    
+    <!-- Outer boundary dots -->
+    <circle cx="0" cy="-35" r="2.5" fill="#10b981" />
+    <circle cx="50" cy="-10" r="2.5" fill="#10b981" />
+    <circle cx="0" cy="15" r="2.5" fill="#10b981" />
+    <circle cx="-50" cy="-10" r="2.5" fill="#10b981" />
+    
+    <!-- Player Connection Nodes -->
+    <circle cx="-15" cy="-5" r="10" fill="#06b6d4" fill-opacity="0.1" class="glowing-node" />
+    <circle cx="-15" cy="-5" r="3.5" fill="#06b6d4" />
+    
+    <circle cx="15" cy="-15" r="10" fill="#10b981" fill-opacity="0.1" class="glowing-node" style="animation-delay:-1s;" />
+    <circle cx="15" cy="-15" r="3.5" fill="#10b981" />
+    
+    <!-- Connection path (matchmaking) -->
+    <path d="M-15,-5 C0,-10 0,-10 15,-15" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="3 3" class="dash-flow" />
+  </g>
+
+  <!-- Interactive CTA link indicator -->
+  <g transform="translate(40, 155)">
+    <text x="0" y="0" class="cta-text">EXPLORE REPOSITORY &amp; ROADMAP →</text>
+  </g>
+</svg>

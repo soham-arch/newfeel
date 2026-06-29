@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 30" width="100%" height="30" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="grad-slope-bottom" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <path d="M0,5 L1000,25 L1000,30 L0,30 Z" fill="#020617"/>
+  <path d="M0,5 L1000,25" fill="none" stroke="url(#grad-slope-bottom)" stroke-width="1"/>
+</svg>

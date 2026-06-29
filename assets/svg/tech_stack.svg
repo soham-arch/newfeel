@@ -1,0 +1,359 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 405" width="100%" height="100%">
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&amp;family=Inter:wght@400;500&amp;display=swap');
+      
+      .card-bg {
+        fill: #030712;
+        stroke: #1e293b;
+        stroke-width: 1.5;
+        rx: 12px;
+      }
+      .card-header {
+        font-family: 'Outfit', system-ui, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        fill: #f8fafc;
+        letter-spacing: 0.02em;
+      }
+      .pill-bg {
+        fill: #0d1527;
+        stroke: #1e293b;
+        stroke-width: 1;
+        rx: 6px;
+      }
+      .pill-text {
+        font-family: 'Inter', system-ui, sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        fill: #94a3b8;
+      }
+      .grid-pattern {
+        fill: none;
+        stroke: #1e293b;
+        stroke-width: 0.5;
+        stroke-opacity: 0.15;
+      }
+    </style>
+    
+    <pattern id="card-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" class="grid-pattern" />
+    </pattern>
+  </defs>
+
+  <!-- Global background shadow blur -->
+  <rect width="100%" height="100%" fill="none" />
+
+  <!-- CARD: Languages -->
+  <g transform="translate(10, 10)">
+    <rect width="250" height="185" class="card-bg" />
+    <rect width="250" height="185" fill="url(#card-grid)" rx="12" />
+    
+    <!-- Glow Indicator line at top -->
+    <path d="M 20 0 L 230 0" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+    
+    <!-- Category Dot & Title -->
+    <circle cx="20" cy="30" r="4" fill="#38bdf8" />
+    <text x="32" y="34" class="card-header">Languages</text>
+    
+    <!-- Tech Stack Pills Grid -->
+    <g transform="translate(15, 55)">
+  
+      <g transform="translate(0, 0)">
+        <rect width="64" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#38bdf8" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">Python</text>
+      </g>
+    
+      <g transform="translate(70, 0)">
+        <rect width="88" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#38bdf8" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">JavaScript</text>
+      </g>
+    
+      <g transform="translate(0, 32)">
+        <rect width="88" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#38bdf8" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">TypeScript</text>
+      </g>
+    
+      <g transform="translate(94, 32)">
+        <rect width="45" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#38bdf8" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">C++</text>
+      </g>
+    
+      <g transform="translate(0, 64)">
+        <rect width="76" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#38bdf8" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">HTML/CSS</text>
+      </g>
+    
+      <g transform="translate(82, 64)">
+        <rect width="45" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#38bdf8" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">SQL</text>
+      </g>
+    
+    </g>
+  </g>
+  
+  <!-- CARD: Frontend -->
+  <g transform="translate(275, 10)">
+    <rect width="250" height="185" class="card-bg" />
+    <rect width="250" height="185" fill="url(#card-grid)" rx="12" />
+    
+    <!-- Glow Indicator line at top -->
+    <path d="M 20 0 L 230 0" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+    
+    <!-- Category Dot & Title -->
+    <circle cx="20" cy="30" r="4" fill="#3b82f6" />
+    <text x="32" y="34" class="card-header">Frontend</text>
+    
+    <!-- Tech Stack Pills Grid -->
+    <g transform="translate(15, 55)">
+  
+      <g transform="translate(0, 0)">
+        <rect width="57" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#3b82f6" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">React</text>
+      </g>
+    
+      <g transform="translate(63, 0)">
+        <rect width="101" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#3b82f6" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">React Native</text>
+      </g>
+    
+      <g transform="translate(0, 32)">
+        <rect width="70" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#3b82f6" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">Next.js</text>
+      </g>
+    
+      <g transform="translate(76, 32)">
+        <rect width="57" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#3b82f6" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">HTML5</text>
+      </g>
+    
+      <g transform="translate(139, 32)">
+        <rect width="51" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#3b82f6" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">CSS3</text>
+      </g>
+    
+      <g transform="translate(0, 64)">
+        <rect width="95" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#3b82f6" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">TailwindCSS</text>
+      </g>
+    
+    </g>
+  </g>
+  
+  <!-- CARD: Backend -->
+  <g transform="translate(540, 10)">
+    <rect width="250" height="185" class="card-bg" />
+    <rect width="250" height="185" fill="url(#card-grid)" rx="12" />
+    
+    <!-- Glow Indicator line at top -->
+    <path d="M 20 0 L 230 0" stroke="#6366f1" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+    
+    <!-- Category Dot & Title -->
+    <circle cx="20" cy="30" r="4" fill="#6366f1" />
+    <text x="32" y="34" class="card-header">Backend</text>
+    
+    <!-- Tech Stack Pills Grid -->
+    <g transform="translate(15, 55)">
+  
+      <g transform="translate(0, 0)">
+        <rect width="70" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#6366f1" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">Node.js</text>
+      </g>
+    
+      <g transform="translate(76, 0)">
+        <rect width="70" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#6366f1" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">Express</text>
+      </g>
+    
+      <g transform="translate(0, 32)">
+        <rect width="70" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#6366f1" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">FastAPI</text>
+      </g>
+    
+      <g transform="translate(76, 32)">
+        <rect width="64" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#6366f1" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">Django</text>
+      </g>
+    
+      <g transform="translate(0, 64)">
+        <rect width="82" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#6366f1" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">REST APIs</text>
+      </g>
+    
+    </g>
+  </g>
+  
+  <!-- CARD: Databases -->
+  <g transform="translate(10, 210)">
+    <rect width="250" height="185" class="card-bg" />
+    <rect width="250" height="185" fill="url(#card-grid)" rx="12" />
+    
+    <!-- Glow Indicator line at top -->
+    <path d="M 20 0 L 230 0" stroke="#10b981" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+    
+    <!-- Category Dot & Title -->
+    <circle cx="20" cy="30" r="4" fill="#10b981" />
+    <text x="32" y="34" class="card-header">Databases</text>
+    
+    <!-- Tech Stack Pills Grid -->
+    <g transform="translate(15, 55)">
+  
+      <g transform="translate(0, 0)">
+        <rect width="70" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#10b981" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">MongoDB</text>
+      </g>
+    
+      <g transform="translate(76, 0)">
+        <rect width="88" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#10b981" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">PostgreSQL</text>
+      </g>
+    
+      <g transform="translate(0, 32)">
+        <rect width="138" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#10b981" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">Firebase Firestore</text>
+      </g>
+    
+      <g transform="translate(0, 64)">
+        <rect width="138" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#10b981" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">Milvus (Vector DB)</text>
+      </g>
+    
+    </g>
+  </g>
+  
+  <!-- CARD: Artificial Intelligence -->
+  <g transform="translate(275, 210)">
+    <rect width="250" height="185" class="card-bg" />
+    <rect width="250" height="185" fill="url(#card-grid)" rx="12" />
+    
+    <!-- Glow Indicator line at top -->
+    <path d="M 20 0 L 230 0" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+    
+    <!-- Category Dot & Title -->
+    <circle cx="20" cy="30" r="4" fill="#8b5cf6" />
+    <text x="32" y="34" class="card-header">Artificial Intelligence</text>
+    
+    <!-- Tech Stack Pills Grid -->
+    <g transform="translate(15, 55)">
+  
+      <g transform="translate(0, 0)">
+        <rect width="70" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#8b5cf6" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">PyTorch</text>
+      </g>
+    
+      <g transform="translate(76, 0)">
+        <rect width="88" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#8b5cf6" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">TensorFlow</text>
+      </g>
+    
+      <g transform="translate(0, 32)">
+        <rect width="101" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#8b5cf6" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">Hugging Face</text>
+      </g>
+    
+      <g transform="translate(107, 32)">
+        <rect width="88" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#8b5cf6" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">OpenAI API</text>
+      </g>
+    
+      <g transform="translate(0, 64)">
+        <rect width="82" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#8b5cf6" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">LangChain</text>
+      </g>
+    
+      <g transform="translate(88, 64)">
+        <rect width="45" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#8b5cf6" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">RAG</text>
+      </g>
+    
+      <g transform="translate(0, 96)">
+        <rect width="88" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#8b5cf6" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">Agentic AI</text>
+      </g>
+    
+    </g>
+  </g>
+  
+  <!-- CARD: Developer Tools -->
+  <g transform="translate(540, 210)">
+    <rect width="250" height="185" class="card-bg" />
+    <rect width="250" height="185" fill="url(#card-grid)" rx="12" />
+    
+    <!-- Glow Indicator line at top -->
+    <path d="M 20 0 L 230 0" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+    
+    <!-- Category Dot & Title -->
+    <circle cx="20" cy="30" r="4" fill="#f59e0b" />
+    <text x="32" y="34" class="card-header">Developer Tools</text>
+    
+    <!-- Tech Stack Pills Grid -->
+    <g transform="translate(15, 55)">
+  
+      <g transform="translate(0, 0)">
+        <rect width="45" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#f59e0b" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">Git</text>
+      </g>
+    
+      <g transform="translate(51, 0)">
+        <rect width="113" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#f59e0b" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">GitHub Actions</text>
+      </g>
+    
+      <g transform="translate(0, 32)">
+        <rect width="64" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#f59e0b" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">Docker</text>
+      </g>
+    
+      <g transform="translate(70, 32)">
+        <rect width="70" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#f59e0b" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">Postman</text>
+      </g>
+    
+      <g transform="translate(146, 32)">
+        <rect width="57" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#f59e0b" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">Linux</text>
+      </g>
+    
+      <g transform="translate(0, 64)">
+        <rect width="70" height="24" class="pill-bg" />
+        <circle cx="10" cy="12" r="2.5" fill="#f59e0b" opacity="0.7" />
+        <text x="18" y="15" class="pill-text">VS Code</text>
+      </g>
+    
+    </g>
+  </g>
+  
+</svg>

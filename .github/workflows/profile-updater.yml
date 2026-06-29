@@ -1,0 +1,56 @@
+name: Update GitHub Profile README
+
+on:
+  schedule:
+    # Run every 12 hours
+    - cron: '0 */12 * * *'
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Generate Custom SVG Dashboards
+        run: node scripts/generate_stats_svg.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate Contribution Grid Snake Animation
+        uses: platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/svg/github-contribution-grid-snake.svg?color_snake=#38bdf8&color_dots=#090d16,#0d1b3e,#1e293b,#3b82f6,#6366f1
+        env:
+          # a github token is required to fetch the contribution calendar from github API
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Compile Profile README
+        run: node scripts/update_readme.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and Push Profile Updates
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md assets/svg/
+          # Commit only if there are changes to avoid noise
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update profile dashboard & assets [skip ci]" && git push)

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="100%" height="100%">
+  <defs>
+    <style type="text/css">
+      .layer {
+        animation: floatLayer 6s ease-in-out infinite alternate;
+      }
+      .layer-1 { animation-delay: 0s; }
+      .layer-2 { animation-delay: -1.5s; }
+      .layer-3 { animation-delay: -3s; }
+      
+      @keyframes floatLayer {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-8px); }
+      }
+      
+      .pulse-dot {
+        animation: dotPulse 2s ease-in-out infinite alternate;
+      }
+      @keyframes dotPulse {
+        0% { opacity: 0.3; r: 1.5; }
+        100% { opacity: 1; r: 3; }
+      }
+
+      .dash-active {
+        stroke-dasharray: 4 8;
+        animation: march 15s linear infinite;
+      }
+      @keyframes march {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -200; }
+      }
+    </style>
+    
+    <linearGradient id="grad-top" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2"/>
+    </linearGradient>
+    
+    <linearGradient id="grad-mid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0.2"/>
+    </linearGradient>
+    
+    <linearGradient id="grad-base" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0d9488" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- BACKGROUND BLUR GLOW -->
+  <circle cx="110" cy="110" r="60" fill="#3b82f6" fill-opacity="0.1" filter="blur(30px)" />
+
+  <!-- ISOMETRIC LAYERS STACK -->
+  <!-- LAYER 3: BASE DATA & STORAGE LAYER (BOTTOM) -->
+  <g class="layer layer-1" transform="translate(110, 155)">
+    <!-- Base Plate -->
+    <polygon points="0,-20 60,10 0,40 -60,10" fill="#0b1527" stroke="url(#grad-base)" stroke-width="1.5" />
+    <polygon points="0,-20 60,10 0,40 -60,10" fill="url(#grad-base)" opacity="0.1" />
+    
+    <!-- Data points inside Base -->
+    <circle cx="-25" cy="10" r="2" fill="#0ea5e9" class="pulse-dot" />
+    <circle cx="25" cy="10" r="2" fill="#0ea5e9" class="pulse-dot" style="animation-delay: -1s;" />
+    <circle cx="0" cy="22" r="2" fill="#0d9488" class="pulse-dot" style="animation-delay: -0.5s;" />
+    <circle cx="0" cy="-2" r="2" fill="#0d9488" class="pulse-dot" style="animation-delay: -1.5s;" />
+  </g>
+
+  <!-- VERTICAL CONNECTORS (MIDDLE TO BASE) -->
+  <line x1="110" y1="120" x2="110" y2="155" stroke="#1e293b" stroke-dasharray="2 4" stroke-width="1.5" />
+  <line x1="80" y1="110" x2="80" y2="145" stroke="#1e293b" stroke-dasharray="2 4" stroke-width="1.5" />
+  <line x1="140" y1="110" x2="140" y2="145" stroke="#1e293b" stroke-dasharray="2 4" stroke-width="1.5" />
+
+  <!-- LAYER 2: LOGIC & MODEL LAYER (MIDDLE) -->
+  <g class="layer layer-2" transform="translate(110, 110)">
+    <!-- Plate -->
+    <polygon points="0,-20 60,10 0,40 -60,10" fill="#0b1527" stroke="url(#grad-mid)" stroke-width="1.5" />
+    <polygon points="0,-20 60,10 0,40 -60,10" fill="url(#grad-mid)" opacity="0.15" />
+    
+    <!-- Neural Connections Mesh -->
+    <line x1="-30" y1="5" x2="0" y2="-5" stroke="#6366f1" stroke-width="1" />
+    <line x1="30" y1="5" x2="0" y2="-5" stroke="#6366f1" stroke-width="1" />
+    <line x1="0" y1="-5" x2="0" y2="20" stroke="#4f46e5" stroke-width="1.5" />
+    <line x1="-30" y1="5" x2="0" y2="20" stroke="#4f46e5" stroke-width="1" />
+    <line x1="30" y1="5" x2="0" y2="20" stroke="#4f46e5" stroke-width="1" />
+    
+    <!-- Neural Nodes -->
+    <circle cx="0" cy="-5" r="3" fill="#ffffff" />
+    <circle cx="-30" cy="5" r="2.5" fill="#6366f1" />
+    <circle cx="30" cy="5" r="2.5" fill="#6366f1" />
+    <circle cx="0" cy="20" r="3.5" fill="#4f46e5" class="pulse-dot" />
+  </g>
+
+  <!-- VERTICAL CONNECTORS (TOP TO MIDDLE) -->
+  <line x1="110" y1="75" x2="110" y2="110" stroke="#1e293b" stroke-dasharray="2 4" stroke-width="1.5" />
+  <line x1="75" y1="65" x2="75" y2="100" stroke="#1e293b" stroke-dasharray="2 4" stroke-width="1.5" />
+  <line x1="145" y1="65" x2="145" y2="100" stroke="#1e293b" stroke-dasharray="2 4" stroke-width="1.5" />
+
+  <!-- LAYER 1: FRONTEND UX LAYER (TOP) -->
+  <g class="layer layer-3" transform="translate(110, 65)">
+    <!-- Plate -->
+    <polygon points="0,-20 60,10 0,40 -60,10" fill="#0b1527" stroke="url(#grad-top)" stroke-width="1.5" />
+    <polygon points="0,-20 60,10 0,40 -60,10" fill="url(#grad-top)" opacity="0.2" />
+    
+    <!-- UX wireframe mockup lines -->
+    <!-- Top-left bar (header) -->
+    <line x1="-35" y1="-5" x2="-10" y2="7" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+    
+    <!-- Top-right button -->
+    <circle cx="25" cy="-2" r="3" fill="none" stroke="#38bdf8" stroke-width="1" />
+    
+    <!-- Main content block -->
+    <polygon points="-25,12 15,-8 30,-1 10,19" fill="none" stroke="#3b82f6" stroke-width="1" />
+    <line x1="-15" y1="17" x2="-5" y2="22" stroke="#3b82f6" stroke-width="1.5" />
+  </g>
+
+  <!-- DYNAMIC STREAMING DATA BEAMS -->
+  <path d="M 50,140 Q 50,90 110,60" fill="none" stroke="#38bdf8" stroke-width="1.5" class="dash-active" opacity="0.6" />
+  <path d="M 170,120 Q 170,80 110,40" fill="none" stroke="#6366f1" stroke-width="1" class="dash-active" opacity="0.4" style="animation-delay: -2s;" />
+</svg>

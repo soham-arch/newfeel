@@ -1,0 +1,96 @@
+{
+  "name": "Soham Patil",
+  "github_username": "soham-arch",
+  "tagline": "AI Engineer & Full Stack Developer",
+  "subheading": "Building Intelligent Products • Solving Real-world Problems • Startup Mindset",
+  "mission_statement": "I consistently build meaningful AI products, learn continuously, solve real-world problems, and maintain the builder's mindset required to build a startup.",
+  "socials": {
+    "github": "https://github.com/soham-arch",
+    "linkedin": "https://www.linkedin.com/in/soham-patil-60b8402a6/",
+    "email": "mailto:psoham2006@gmail.com",
+    "leetcode": "https://leetcode.com/u/CodingFreak7/",
+    "hackerrank": "https://www.hackerrank.com/profile/psoham2006",
+    "twitter": "https://x.com/Pa96355696Soham",
+    "instagram": "https://www.instagram.com/patil_soham_77/"
+  },
+  "current_mission": {
+    "building": [
+      {
+        "name": "MindMirror",
+        "description": "AI-powered mental health tracking & journaling."
+      },
+      {
+        "name": "CrimeFace",
+        "description": "Facial recognition suspect profiling vector search."
+      },
+      {
+        "name": "Turfly",
+        "description": "Sports venue booking & matchmaking application."
+      }
+    ],
+    "learning": [
+      "Agentic AI & Multi-Agent Frameworks",
+      "Retrieval-Augmented Generation (RAG) at scale",
+      "System Design for distributed architectures",
+      "Open Source Contributions"
+    ]
+  },
+  "projects": [
+    {
+      "name": "MindMirror",
+      "description": "An AI-powered mental well-being tracking journal that parses user sentiment, captures cognitive distortions, and presents a visual mental health dashboard.",
+      "problem": "Mental health tracking is often manual, tedious, and lacks objective, actionable insights.",
+      "solution": "Automated sentiment parsing via NLP, identifying psychological distortion patterns, and summarizing emotional trends over time.",
+      "tech": ["React", "Node.js", "Python (NLP)", "Tailwind CSS", "Firebase"],
+      "status": "Active / Refining",
+      "github_link": "https://github.com/soham-arch/MindMirror",
+      "roadmap": "Add voice diary sentiment analysis and real-time therapist sharing integration."
+    },
+    {
+      "name": "CrimeFace",
+      "description": "An intelligent facial recognition and suspect profiling system designed for security operations and automated search in high-density databases.",
+      "problem": "CCTV suspect search is manual, slow, and prone to human error during emergencies.",
+      "solution": "Implemented deep learning face embedding networks connected to a vector database (Milvus/Pinecone) for sub-millisecond retrieval across millions of face signatures.",
+      "tech": ["Python", "OpenCV", "PyTorch", "FastAPI", "Docker", "Milvus"],
+      "status": "Production-ready",
+      "github_link": "https://github.com/soham-arch/CrimeFace",
+      "roadmap": "Add multi-camera real-time video stream tracking and occlusion handling."
+    },
+    {
+      "name": "Turfly",
+      "description": "A comprehensive sports turf reservation and local matchmaking application designed to bring together athletes and streamline venue reservations.",
+      "problem": "Sports venue booking is fragmented and finding players for local amateur matches is extremely difficult.",
+      "solution": "Built a unified booking calendar with a built-in matchmaking social layer allowing players to create, discover, and join local games.",
+      "tech": ["React Native", "Express", "MongoDB", "Node.js", "Google Maps API"],
+      "status": "Deployment phase",
+      "github_link": "https://github.com/soham-arch/Turfly",
+      "roadmap": "Integrate automated league tournaments and split-billing payments in-app."
+    }
+  ],
+  "tech_stack": {
+    "Languages": ["Python", "JavaScript", "TypeScript", "C++", "HTML/CSS", "SQL"],
+    "Frontend": ["React", "React Native", "Next.js", "HTML5", "CSS3", "TailwindCSS"],
+    "Backend": ["Node.js", "Express", "FastAPI", "Django", "REST APIs"],
+    "Databases": ["MongoDB", "PostgreSQL", "Firebase Firestore", "Milvus (Vector DB)"],
+    "Artificial Intelligence": ["PyTorch", "TensorFlow", "Hugging Face", "OpenAI API", "LangChain", "RAG", "Agentic AI"],
+    "Developer Tools": ["Git", "GitHub Actions", "Docker", "Postman", "Linux", "VS Code"]
+  },
+  "learning_journey": [
+    { "milestone": "Started Programming", "detail": "Learned algorithms and core computer science fundamentals." },
+    { "milestone": "Android Development", "detail": "Built native mobile experiences and mobile user interactions." },
+    { "milestone": "Firebase", "detail": "Architected real-time synchronizations and serverless databases." },
+    { "milestone": "Full Stack", "detail": "Developed responsive web architectures and solid REST API backends." },
+    { "milestone": "AI Projects", "detail": "Transitioned to building intelligent products using deep neural networks." },
+    { "milestone": "Computer Vision", "detail": "Worked with CNNs, face embeddings, and real-time image processing." },
+    { "milestone": "RAG Architectures", "detail": "Integrated vector search engines with LLMs to query domain-specific data." },
+    { "milestone": "Agentic AI", "detail": "Building autonomous, tool-calling multi-agent execution graphs." }
+  ],
+  "goals": [
+    { "name": "Open Source Contributions", "desc": "Contribute to core LLM frameworks like LangChain, LlamaIndex, and AutoGen." },
+    { "name": "Deploy AI Micro-SaaS", "desc": "Launch 3 production-grade intelligent micro-SaaS products to real users." },
+    { "name": "System Design Mastery", "desc": "Master distributed systems, concurrency, and high-performance system design." },
+    { "name": "Personal Brand & Website", "desc": "Publish deep-dive technical articles and launch a personal developer website." },
+    { "name": "Secure AI Internship", "desc": "Gain hands-on corporate engineering experience building large-scale AI models." },
+    { "name": "Incubate Tech Startup", "desc": "Formulate a team, design an MVP, and pitch an AI-driven venture to early-stage investors." }
+  ]
+}

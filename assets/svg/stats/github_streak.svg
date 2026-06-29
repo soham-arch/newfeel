@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 110" width="100%" height="100%">
+  <defs>
+    <style type="text/css">
+      
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;900&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@700&amp;display=swap');
+  
+  .card-bg {
+    fill: #030712;
+    stroke: #1e293b;
+    stroke-width: 1.5;
+    rx: 12px;
+  }
+  .header-title {
+    font-family: 'Outfit', system-ui, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    fill: #f8fafc;
+    letter-spacing: 0.02em;
+  }
+  .label-text {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    fill: #94a3b8;
+  }
+  .value-text {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+    font-weight: 700;
+    fill: #f8fafc;
+  }
+  .grid-pattern {
+    fill: none;
+    stroke: #1e293b;
+    stroke-width: 0.5;
+    stroke-opacity: 0.15;
+  }
+
+      .streak-val {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 26px;
+        font-weight: 700;
+        fill: #f8fafc;
+      }
+      .streak-label {
+        font-family: 'Outfit', system-ui, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        fill: #64748b;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+    </style>
+    <pattern id="streak-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" class="grid-pattern" />
+    </pattern>
+  </defs>
+
+  <rect width="100%" height="100%" class="card-bg" />
+  <rect width="100%" height="100%" fill="url(#streak-grid)" rx="12" />
+  <path d="M 30 0 L 150 0" stroke="#10b981" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Columns -->
+  <!-- Col 1: Total Contributions -->
+  <g transform="translate(60, 30)">
+    <text x="0" y="15" class="streak-label">Total Contributions</text>
+    <text x="0" y="50" class="streak-val" fill="#38bdf8">482</text>
+    <!-- Graph Accent -->
+    <circle cx="210" cy="30" r="1.5" fill="#1e293b" />
+  </g>
+
+  <!-- Divider -->
+  <line x1="280" y1="20" x2="280" y2="90" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Col 2: Current Streak -->
+  <g transform="translate(320, 30)">
+    <!-- Fire Icon representation in SVG -->
+    <path d="M 0 10 Q -5 2 -10 10 Q -15 20 -5 28 C 5 36 20 22 15 12 Q 13 4 5 12" fill="#ef4444" opacity="0.1" transform="translate(0, 0) scale(1.2)" />
+    <text x="0" y="15" class="streak-label" fill="#f43f5e">🔥 Current Streak</text>
+    <text x="0" y="50" class="streak-val" fill="#f43f5e">12 <tspan font-size="14" font-family="Inter" fill="#64748b" font-weight="400">days</tspan></text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="520" y1="20" x2="520" y2="90" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Col 3: Longest Streak -->
+  <g transform="translate(560, 30)">
+    <!-- Trophy Icon representation in SVG -->
+    <text x="0" y="15" class="streak-label" fill="#eab308">🏆 Longest Streak</text>
+    <text x="0" y="50" class="streak-val" fill="#eab308">34 <tspan font-size="14" font-family="Inter" fill="#64748b" font-weight="400">days</tspan></text>
+  </g>
+</svg>

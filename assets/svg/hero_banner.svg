@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="100%">
+  <defs>
+    <!-- Fonts -->
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap');
+      
+      .title-text {
+        font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+        font-weight: 900;
+        font-size: 46px;
+        fill: #ffffff;
+        letter-spacing: -0.03em;
+      }
+      
+      .gradient-text {
+        fill: url(#title-grad);
+      }
+      
+      .subtitle-text {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 700;
+        font-size: 20px;
+        fill: #38bdf8;
+        letter-spacing: -0.01em;
+      }
+
+      .tagline-text {
+        font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        fill: #64748b;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+      
+      /* Cycling Text Animation */
+      .cycle-text {
+        opacity: 0;
+        animation: textCycle 12s infinite;
+      }
+      
+      .cycle-1 { animation-delay: 0s; }
+      .cycle-2 { animation-delay: 3s; }
+      .cycle-3 { animation-delay: 6s; }
+      .cycle-4 { animation-delay: 9s; }
+      
+      @keyframes textCycle {
+        0% { opacity: 0; transform: translateY(8px); }
+        4% { opacity: 1; transform: translateY(0px); }
+        21% { opacity: 1; transform: translateY(0px); }
+        25% { opacity: 0; transform: translateY(-8px); }
+        100% { opacity: 0; }
+      }
+
+      /* Cursor blinking */
+      .cursor {
+        animation: blink 0.8s infinite;
+        fill: #38bdf8;
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      /* Float animations for neural network nodes */
+      .float-node {
+        animation: floatAnim 6s ease-in-out infinite alternate;
+      }
+      .float-node-reverse {
+        animation: floatAnimRev 7s ease-in-out infinite alternate;
+      }
+      
+      @keyframes floatAnim {
+        0% { transform: translateY(0px) translateX(0px); }
+        100% { transform: translateY(-10px) translateX(4px); }
+      }
+      @keyframes floatAnimRev {
+        0% { transform: translateY(0px) translateX(0px); }
+        100% { transform: translateY(8px) translateX(-6px); }
+      }
+
+      /* Flowing data line dash offset */
+      .pulse-line {
+        stroke-dasharray: 8, 12;
+        animation: march 30s linear infinite;
+      }
+      @keyframes march {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -1000; }
+      }
+
+      /* Pulsing animations for nodes */
+      .pulse-core {
+        animation: corePulse 3s ease-in-out infinite alternate;
+      }
+      @keyframes corePulse {
+        0% { r: 12; fill-opacity: 0.2; }
+        100% { r: 18; fill-opacity: 0.4; }
+      }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="50%" stop-color="#070f23" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+
+    <radialGradient id="card-glow" cx="80%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#020617" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.5" stroke-opacity="0.25" />
+    </pattern>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)" rx="16" stroke="#1e293b" stroke-width="1.5" />
+  <rect width="100%" height="100%" fill="url(#card-glow)" rx="16" />
+  <rect width="100%" height="100%" fill="url(#grid)" rx="16" />
+
+  <!-- DECORATIVE SHAPES (LEFT GLOW) -->
+  <circle cx="100" cy="80" r="120" fill="#0369a1" fill-opacity="0.08" filter="blur(40px)" />
+  <circle cx="600" cy="150" r="100" fill="#4f46e5" fill-opacity="0.1" filter="blur(50px)" />
+
+  <!-- BRAND NAME & DETAILS (LEFT ALIGNED) -->
+  <g transform="translate(60, 0)">
+    <!-- Tech Tag -->
+    <text x="0" y="85" class="tagline-text">BUILDING INTELLIGENT PRODUCTS</text>
+    
+    <!-- Title -->
+    <text x="0" y="140" class="title-text">
+      SOHAM <tspan class="gradient-text">PATIL</tspan>
+    </text>
+
+    <!-- Cycling Subtitle -->
+    <g transform="translate(0, 185)">
+      <!-- Terminal prompt symbol -->
+      <text x="0" y="0" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="700" fill="#64748b">> </text>
+      
+      <!-- Subheading 1 -->
+      <text x="25" y="0" class="subtitle-text cycle-text cycle-1">AI Engineer</text>
+      <!-- Subheading 2 -->
+      <text x="25" y="0" class="subtitle-text cycle-text cycle-2">Full Stack Developer</text>
+      <!-- Subheading 3 -->
+      <text x="25" y="0" class="subtitle-text cycle-text cycle-3">Building Intelligent Products</text>
+      <!-- Subheading 4 -->
+      <text x="25" y="0" class="subtitle-text cycle-text cycle-4">Future Startup Founder</text>
+
+      <!-- Cursor -->
+      <rect x="365" y="-18" width="10" height="20" class="cursor" />
+    </g>
+
+    <!-- Brief Bio Description -->
+    <text x="0" y="225" font-family="'Outfit', system-ui, -apple-system, sans-serif" font-size="14" fill="#94a3b8" font-weight="400">
+      Optimizing neural models &amp; scaling full-stack vector architectures.
+    </text>
+  </g>
+
+  <!-- NEURAL NETWORK GRAPHICS (RIGHT ALIGNED) -->
+  <g transform="translate(580, 150)">
+    
+    <!-- Connection lines -->
+    <!-- Center to orbiters -->
+    <line x1="0" y1="0" x2="-80" y2="-50" stroke="#334155" stroke-dasharray="2 4" stroke-width="1.5" />
+    <line x1="0" y1="0" x2="60" y2="-70" stroke="#334155" stroke-dasharray="2 4" stroke-width="1.5" />
+    <line x1="0" y1="0" x2="80" y2="40" stroke="#334155" stroke-dasharray="2 4" stroke-width="1.5" />
+    <line x1="0" y1="0" x2="-40" y2="80" stroke="#334155" stroke-dasharray="2 4" stroke-width="1.5" />
+    
+    <!-- Ring / Data loops -->
+    <path d="M-80,-50 Q-10,-90 60,-70 T80,40 T-40,80 Z" fill="none" stroke="url(#title-grad)" stroke-width="1.5" class="pulse-line" stroke-opacity="0.4" />
+    
+    <!-- Outer orbiting elements (floating) -->
+    <!-- Node A -->
+    <g class="float-node" style="animation-delay: 0s;">
+      <circle cx="-80" cy="-50" r="10" fill="#0d1b3e" stroke="#38bdf8" stroke-width="1.5" />
+      <circle cx="-80" cy="-50" r="3" fill="#38bdf8" />
+    </g>
+    
+    <!-- Node B -->
+    <g class="float-node-reverse" style="animation-delay: -1s;">
+      <circle cx="60" cy="-70" r="8" fill="#0d1b3e" stroke="#3b82f6" stroke-width="1.5" />
+      <circle cx="60" cy="-70" r="2.5" fill="#3b82f6" />
+    </g>
+
+    <!-- Node C -->
+    <g class="float-node" style="animation-delay: -2.5s;">
+      <circle cx="80" cy="40" r="11" fill="#0d1b3e" stroke="#6366f1" stroke-width="1.5" />
+      <circle cx="80" cy="40" r="4" fill="#6366f1" />
+    </g>
+
+    <!-- Node D -->
+    <g class="float-node-reverse" style="animation-delay: -1.5s;">
+      <circle cx="-40" cy="80" r="9" fill="#0d1b3e" stroke="#06b6d4" stroke-width="1.5" />
+      <circle cx="-40" cy="80" r="3" fill="#06b6d4" />
+    </g>
+
+    <!-- Center Pulse Glow -->
+    <circle cx="0" cy="0" r="15" fill="#38bdf8" fill-opacity="0.2" class="pulse-core" />
+    <circle cx="0" cy="0" r="6" fill="#38bdf8" />
+
+  </g>
+</svg>
