@@ -61,10 +61,10 @@
       <rect x="110" y="2" width="150" height="8" rx="4" fill="#0d1527" stroke="#1e293b" stroke-width="0.5" />
       
       <!-- Progress Bar Fill -->
-      <rect x="110" y="2" width="92" height="8" rx="4" fill="#3178c6" />
+      <rect x="110" y="2" width="93" height="8" rx="4" fill="#3178c6" />
       
       <!-- Percentage Text -->
-      <text x="270" y="11" class="label-text" font-size="11" fill="#64748b">61.1%</text>
+      <text x="270" y="11" class="label-text" font-size="11" fill="#64748b">61.4%</text>
     </g>
     
     <g transform="translate(0, 24)">
@@ -78,7 +78,7 @@
       <rect x="110" y="2" width="29" height="8" rx="4" fill="#f1e05a" />
       
       <!-- Percentage Text -->
-      <text x="270" y="11" class="label-text" font-size="11" fill="#64748b">18.9%</text>
+      <text x="270" y="11" class="label-text" font-size="11" fill="#64748b">18.8%</text>
     </g>
     
     <g transform="translate(0, 48)">
@@ -89,10 +89,10 @@
       <rect x="110" y="2" width="150" height="8" rx="4" fill="#0d1527" stroke="#1e293b" stroke-width="0.5" />
       
       <!-- Progress Bar Fill -->
-      <rect x="110" y="2" width="14" height="8" rx="4" fill="#3572A5" />
+      <rect x="110" y="2" width="13" height="8" rx="4" fill="#3572A5" />
       
       <!-- Percentage Text -->
-      <text x="270" y="11" class="label-text" font-size="11" fill="#64748b">8.7%</text>
+      <text x="270" y="11" class="label-text" font-size="11" fill="#64748b">8.6%</text>
     </g>
     
     <g transform="translate(0, 72)">
@@ -106,7 +106,7 @@
       <rect x="110" y="2" width="9" height="8" rx="4" fill="#336790" />
       
       <!-- Percentage Text -->
-      <text x="270" y="11" class="label-text" font-size="11" fill="#64748b">5.6%</text>
+      <text x="270" y="11" class="label-text" font-size="11" fill="#64748b">5.5%</text>
     </g>
     
     <g transform="translate(0, 96)">
